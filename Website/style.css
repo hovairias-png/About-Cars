@@ -1,0 +1,74 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Dark Purple */
+  color: white;
+  text-align: center;
+}
+
+header {
+  background: #4b0082; /* Solid Purple */
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+main {
+  padding: 30px;
+}
+
+/* Grid for slides */
+.slides {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual slide */
+.slide {
+  background: #2a0033;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.slide h3 {
+  color: #d8bfff; /* Light purple */
+  margin: 10px 0;
+}
+
+.slide p {
+  padding: 0 10px 20px;
+  font-size: 14px;
+}
+
+/* Hover effect */
+.slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgb(124, 0, 226);
+}
+
+.slide:hover img {
+  transform: scale(1.5);
+}
+
+
+
+footer {
+  background: #4b0082;
+  padding: 10px;
+  margin-top: 30px;
+}
